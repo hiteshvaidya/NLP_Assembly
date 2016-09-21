@@ -1,0 +1,16 @@
+HL points @4000H
+Get first operand		???
+HL points @4001H
+Subtract second operand ???
+HL points @4002H
+Store result at @4002H
+Terminate program execution
+
+output:
+LXI H, 4000H		check with 3rd line in ip and op  i.e. code should be semantically correct.
+MOV A, M
+INX H 				here we can use LXI again. this condition tells that our program must be semantically correct
+SUB M
+INX H
+MOV M, A
+HLT

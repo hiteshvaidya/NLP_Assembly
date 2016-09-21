@@ -1,0 +1,18 @@
+Initialize HL register pair as a pointer to memory location @2000H.
+Initialize DE register pair as a pointer to memory location @4000H.
+Get the contents of memory location @2000H into B register.
+Get the contents of memory location @4000H into A register.
+Store the contents of A register into memory location @2000H.
+Copy the contents of B register into accumulator.
+Store the contents of A register into memory location @4000H.	
+Terminate program execution.
+ 
+output:
+LXI H 2000H
+LXI D 4000H
+MOV B, M
+LDAX D
+MOV M, A 					???it should be STAX H
+LDAX B						???not MOV A, B
+STAX D 						***STAX never takes memory location, it takes register pair
+HLT

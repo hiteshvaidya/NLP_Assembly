@@ -1,0 +1,12 @@
+Thesaures,Instruction,Category
+store;move;transfer;register;address;memory;location;data,MVI,4;8
+move;address;memory;location;transfer;register,MOV,6;9
+store;accumulator;acc;move;transfer;address;location,STA,1
+addition;register;add;sum;total;summation;+,ADD,1;7
+terminate;end,HLT,
+move;get;contents;memory;location;accumulator;acc,LDA,1
+load;initialize;pointer;points;address;location;memory,LXI,8
+get;contents;memory;location;accumulator;acc;B;D,LDAX,7
+move;store;transfer;register;accumulator;acc;load;B;D,STAX,7
+subtract;minus;-;register;difference,SUB,2;7
+add;carry;high;byte;result,ADC,2;7

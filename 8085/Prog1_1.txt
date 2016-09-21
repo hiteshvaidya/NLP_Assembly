@@ -1,0 +1,8 @@
+Store #32H in the accumulator 
+Copy accumulator contents at address @4000H
+Terminate program execution 
+
+output:
+MVI A, 32H		**LDA 32H
+STA 4000H
+HLT

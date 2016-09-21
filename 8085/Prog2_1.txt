@@ -1,0 +1,16 @@
+Get the contents of memory location @2000H into accumulator 
+Save the accumulator contents into B register 								
+Get the contents of memory location @4000H into accumulator 
+Store the contents of accumulator at address @2000H 
+Get the accumulator contents back into A register 
+Store the contents of accumulator at address @4000H
+Terminate
+
+output:
+LDA 2000H
+MOV B,A 					??what contents, it must be accumulator contents
+LDA 4000H
+STA 2000H
+MOV A,B 					??what saved contents, it must be accumulator contents
+STA 4000H
+HLT

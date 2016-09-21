@@ -1,0 +1,12 @@
+Instruction Category Table,
+Index,type
+0,data
+1,address
+2,register
+3,data & address
+4,data & register
+5,register & address
+6,register  & register
+7,register pair
+8,data & register pair
+9,register & register pair

@@ -1,0 +1,8 @@
+Load HL with @4000H
+Store #32H in memory location pointed by HL register pair (4000H) 
+Terminate program execution 
+
+output:
+LXI H,4000H
+MVI M
+HLT

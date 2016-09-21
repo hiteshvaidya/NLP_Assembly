@@ -1,0 +1,41 @@
+Instructions
+MVI
+STA
+LXI
+LDA
+MOV
+LDAX
+STAX
+INX
+SUB
+LHLD
+XCHG
+ADD
+ADC
+SHLD
+HLT
+
+
+conflicting commands:
+LDA, STA
+MVI, MOV
+LDA, LDAX
+STA, STAX
+LXI, INX
+Combination of categories and operand order would solve the conflict
+
+Categorization of instructions:
+* how to categorize instructions related to register pairs like HL, B/D etc.
+
+How to identify first operands:
+We check the words like 'in','into','to','at','with'
+operand can be either 'address','register pair','data','accumulator'
+operand on left of words are 1st operands and those on right are 2nd operand. (Exception: HL points @4000H,  can there be more such sentences?)
+this in turn also helps to categorize the instructions
+					OR
+don't check the words, instead parse string from left to right
+
+Mapping register pair to memory locations and vice versa: (eg. Prog2_2.txt)
+This can also be done with registers and data
+This pushes away the need for AI as discussed on phone call
+Con - This gives an option of printing two commands. Which one to select?

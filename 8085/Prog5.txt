@@ -1,0 +1,24 @@
+Get first 16-bit number in HL
+Save first 16-bit number in DE 
+Get second 16-bit number in HL
+Get lower byte of the first number 
+Add lower byte of the second number 
+Store result in L register 
+Get higher byte of the first number 
+Add higher byte of the second number with CARRY 
+Store result in H register 
+Store I6-bit result in memory locations 4004H and 4005H.
+Terminate program execution
+
+output:
+LHLD 4000H								??input is incorrect
+XCHG									??mapping with the input in this program
+LHLD 4002H								??input incorrect
+MOV A, E
+ADD L
+MOV L, A
+MOV A, D
+ADC H
+MOV H, A
+SHLD 4004H
+HLT
