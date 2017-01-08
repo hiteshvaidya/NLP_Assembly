@@ -12,7 +12,7 @@ CSV
 Input text file written in english
 
 #Usage
-Run python converter-v1.3.py <input text file> in terminal/cmd. The program performs conversion and asks for the folder to save the output file.
+Run python converter-v1.3.py < input text file> in terminal/cmd. The program performs conversion and asks for the folder to save the output file.
 
 #Work to be done
 Currently two features are to be added to this code viz.
