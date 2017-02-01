@@ -31,13 +31,13 @@ class Read:
         self.readFile = self.file.readlines()
         
         for counter in self.readFile:
-            temp1 = counter.rstrip()
+            temp1 = counter.rstrip()                                                    #strip out extra whitespaces in the input line
             temp2 = str()
             if temp2 is temp1:
                 break
-            temp2 = temp1.split()
+            temp2 = temp1.split()                                                       #split the sentence into words and store in temp2
             temp2[0] = temp2[0].lower()                                                 #we can lower only 1st word bcoz later registers and address are in caps
-            self.lines.append(temp2)
+            self.lines.append(temp2)                                                    #append the list of words in each line of input to self.lines
         self.file.close()
         
 
