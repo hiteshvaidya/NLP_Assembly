@@ -1,0 +1,22 @@
+Instruction Category Table,
+Index,type
+0,
+1,acc
+2,data
+3,address
+4,register
+5,memory
+6,port
+7,register;data
+8,register;register
+9,register;memory
+10,memory;data
+11,memory;register
+12,acc;data
+13,acc;memory
+14,address;acc
+15,acc;register
+16,register;acc
+17,"memory,acc"
+18,acc;address
+19,jump
